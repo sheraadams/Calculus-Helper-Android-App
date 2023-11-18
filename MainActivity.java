@@ -18,13 +18,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Initialize your EditText variables using findViewById
+        // Initialize EditText variables using findViewById
         coefficient = findViewById(R.id.editTextCoefficient);
         coefficient_answer = findViewById(R.id.editTextCoefficientAnswer);
         power = findViewById(R.id.editTextPower);
         power_answer = findViewById(R.id.editTextPowerAnswer);
 
-        // Initialize your button and switch (assuming you have them in your layout)
+        // Initialize button and switch (assuming you have them in your layout)
         calculate_button = findViewById(R.id.calculate_button);
         choice_switch = findViewById(R.id.choice_switch);
         state = findViewById(R.id.state);
@@ -32,13 +32,10 @@ public class MainActivity extends AppCompatActivity {
         choice_switch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Check the state of the switch to decide whether to perform derivative or integral
                 if (choice_switch.isChecked()) {
-
                     state.setText("Integral");
                     state2.setText("Integral");
                 } else {
-
                     state.setText("Derivative");
                     state2.setText("Derivative");
                 }
