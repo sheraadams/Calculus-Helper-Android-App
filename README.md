@@ -1,4 +1,4 @@
-# Calculus-Helper-Android-App
+# Calculus Helper Android App
 
 [![GitHub](https://img.shields.io/github/license/sheraadams/Calculus-Helper-Android-App)](https://img.shields.io/github/license/sheraadams/Calculus-Helper-Android-App)
 
