@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Calculus Helper</string>
+    <string name="equation_template">Equation: %.2fx^%.2f</string>
+</resources>
