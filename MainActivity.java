@@ -130,6 +130,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("POWER", power);
                 intent.putExtra("COEFFICIENT_ANSWER", coefficientAnswer);
                 intent.putExtra("POWER_ANSWER", powerAnswer);
+
                 startActivity(intent);
             } else {
                 // Handle the case where one or both of the answer inputs are empty

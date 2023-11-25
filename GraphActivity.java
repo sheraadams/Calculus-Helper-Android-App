@@ -70,6 +70,24 @@ public class GraphActivity extends AppCompatActivity {
                 launchCalculatorActivity();
             }
         });
+        // Set click listener for Graph 1 (chartTop)
+        chartTop.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                int chartChoice = 1;
+                launchZoomedInActivity(coefficient, power, coefficientAnswer, powerAnswer, chartChoice);
+            }
+        });
+
+// Set click listener for Graph 2 (chartBottom)
+        chartBottom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int chartChoice = 2;
+                launchZoomedInActivity(coefficient, power, coefficientAnswer, powerAnswer, chartChoice);
+            }
+        });
     }
 
     private void setupChart(LineChart chart, String title, String yAxisLabel) {
@@ -145,4 +163,14 @@ public class GraphActivity extends AppCompatActivity {
         Intent intent = new Intent(GraphActivity.this, MainActivity.class);
         startActivity(intent);
     }
+    void launchZoomedInActivity(double coefficient, double power, double coefficientAnswer, double powerAnswer, int chartChoice) {
+        Intent intent = new Intent(GraphActivity.this, ZoomedInActivity.class);
+        intent.putExtra("COEFFICIENT", coefficient);
+        intent.putExtra("POWER", power);
+        intent.putExtra("COEFFICIENT_ANSWER", coefficientAnswer);
+        intent.putExtra("POWER_ANSWER", powerAnswer);
+        intent.putExtra("CHART_CHOICE", chartChoice);
+        startActivity(intent);
+    }
+
 }
