@@ -12,6 +12,8 @@ This app was programmed with Java in [Android Studio](https://developer.android.
 
 ![ndroid calc2](https://github.com/sheraadams/Calculus-Helper-Android-App/assets/110789514/cc4e1d05-2cad-4565-aeda-3514f5b57e38)
 
+## Calculations
+
 We calculate the derivative as follows: 
 ```java
     void derivative() {
@@ -31,7 +33,7 @@ We calculate the derivative as follows:
         }
     }
 ```
-Similarly we calculate the inegral:
+Similarly, we calculate the inegral:
 ```java
     void integral() {
         try {
@@ -50,6 +52,7 @@ Similarly we calculate the inegral:
         }
     }
 ```
+## Plotting the data
 
 We can plot the data with the help of the [MPAndroidChart library](https://github.com/PhilJay/MPAndroidChart/tree/master). Once we set up some preferences and plot configurations, we can calulate our data points: 
 ```java
