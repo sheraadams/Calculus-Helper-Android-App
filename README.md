@@ -10,6 +10,8 @@
 ## About the Project
 This app was programmed with Java in [Android Studio](https://developer.android.com/studio). It is compiled with SDK 34 and targets SDK 24 - 33. It is a helpful tool for mathematical modeling and for quick conversion between integrals and derivatives. It is inspired from one of [my first projects](https://github.com/sheraadams/Simple-RSA-Mesage-Encryption) which I originally programmed with Python and Tkinter. 
 
+## Screenshots
+
 ![ndroid calc2](https://github.com/sheraadams/Calculus-Helper-Android-App/assets/110789514/cc4e1d05-2cad-4565-aeda-3514f5b57e38)
 
 ## Calculations
