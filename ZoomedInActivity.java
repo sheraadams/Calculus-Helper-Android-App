@@ -48,10 +48,8 @@ public class ZoomedInActivity extends AppCompatActivity {
             int colorZoomedIn1 = getColor(R.color.colorPrimary);
             setData(zoomedInChart, zoomedInDataSet2, label, colorZoomedIn1);
             setupChart(zoomedInChart, "Zoomed In Chart", "Coefficient x^Power");
-
         }
 
-        // Example usage in onCreate
         findViewById(R.id.back_to_graph_button).setOnClickListener(view ->
                 backToGraph(coefficient, power, coefficientAnswer, powerAnswer));
     }
@@ -63,7 +61,6 @@ public class ZoomedInActivity extends AppCompatActivity {
             float y = (float) (coefficient * Math.pow(x, power));
             entries.add(new Entry(x, y));
         }
-
         return entries;
     }
     private List<Entry> generateQuadraticData2(double coefficientAnswer, double powerAnswer) {
@@ -73,7 +70,6 @@ public class ZoomedInActivity extends AppCompatActivity {
             float y = (float) (coefficientAnswer * Math.pow(x, powerAnswer));
             entries.add(new Entry(x, y));
         }
-
         return entries;
     }
 
